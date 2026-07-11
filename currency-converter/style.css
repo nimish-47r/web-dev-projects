@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide the native up/down spinner arrows on number inputs.*/
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: #162381;
+    font-family: sans-serif;
+    position: relative;
+    top: -45px;
+}
+
+select, input {
+    box-sizing: border-box;
+    height: 30px;
+    padding: 4px 8px;
+    border: 1px solid #ccc;
+    color: #162381;
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+select {
+    width: 300px;
+}
+
+input {
+    width: 100px;
+}
+
+select:focus, input:focus {
+    outline: none;
+    border: 1px solid #4753ae;
+    box-shadow: 0 0 0 2px rgba(71, 83, 174, 0.2);
+}
